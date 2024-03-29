@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { ReduxProvider } from "../redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
               Notes
             </Link>
           </nav>
+          <ReduxProvider>
             {children}
+          </ReduxProvider>
         </main>
       </body>
     </html>
