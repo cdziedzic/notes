@@ -1,10 +1,11 @@
-import Image from "next/image";
+import Login from './Login';
 
 export default function Home() {
   return (
   <div>
     <h1>Home Page</h1>
-    <p>Here is some content</p>
+    <Login />
+
   </div>
   );
 }
